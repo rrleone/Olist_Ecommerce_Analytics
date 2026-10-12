@@ -1,0 +1,26 @@
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Arquivos temporários e logs
+*.log
+*.tmp
+
+# Exportação auxiliar do catálogo PostgreSQL
+olist_views_export.csv
