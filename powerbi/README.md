@@ -1,3 +1,3 @@
 # Power BI
 
-Esta pasta contém o arquivo do relatório Power BI do projeto Olist E-Commerce Analytics.
+Arquivo do relatório Power BI do projeto Olist E-Commerce Analytics, com indicadores comerciais, análises logísticas e insights executivos.
