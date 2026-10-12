@@ -177,3 +177,11 @@ A IA apoia o trabalho analítico, mas não substitui a validação humana.
 Analista de Dados | Business Intelligence
 
 GitHub: https://github.com/rrleone
+
+## 📊 Relatório Power BI
+
+Acesse o relatório interativo do projeto Olist:
+
+[**Visualizar relatório no Power BI Service**](https://app.powerbi.com/groups/me/reports/10365f91-fec0-4c71-8167-ed18bcda7ef6/cea2e666e69c26cf6079?experience=power-bi)
+
+> O acesso ao relatório depende das permissões e da autenticação da conta Power BI.
