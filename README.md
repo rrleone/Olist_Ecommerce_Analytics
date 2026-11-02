@@ -214,4 +214,66 @@ Olist_Ecommerce_Analytics/
 │   ├── 02_import_csv.sql
 │   ├── 03_data_quality.sql
 │   ├── 04_exploration.sql
-│   ├
+│   ├── 05_business_analysis.sql
+│   ├── 06_views.sql
+│   ├── 07_validation.sql
+│   ├── 08_dim_calendar.sql
+│   ├── exports/
+│   ├── views/
+│   └── README.md
+│
+└── README.md
+```
+
+---
+
+## 🚀 Como reproduzir o projeto
+
+1. Baixe o dataset original do [Kaggle — Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+2. Configure o PostgreSQL no ambiente local.
+3. Organize os arquivos CSV na estrutura de dados do projeto.
+4. Ajuste os caminhos de importação conforme o ambiente.
+5. Execute os scripts SQL na sequência numerada, respeitando as dependências.
+6. Consulte os scripts e documentação da pasta `sql/views/`.
+7. Execute as consultas de validação.
+8. Abra `powerbi/Projeto_Olist.pbix`.
+9. Configure a conexão ao PostgreSQL e atualize os dados.
+
+**Observação:** caminhos de arquivos e parâmetros de conexão podem precisar de ajustes para cada ambiente.
+
+---
+
+## 🤖 Inteligência Artificial aplicada à análise
+
+A Inteligência Artificial pode ser utilizada como apoio ao desenvolvimento de consultas, medidas, validações, depuração e documentação.
+
+O uso responsável exige:
+
+- Compreensão do código produzido.
+- Validação independente das consultas e resultados.
+- Conferência das regras de negócio.
+- Verificação de relacionamentos e contexto de filtros.
+- Responsabilidade do analista pela interpretação final.
+
+**A IA acelera tarefas analíticas, mas a validação e a tomada de decisão permanecem sob responsabilidade do profissional.**
+
+---
+
+## 👤 Autor
+
+**Renato Leone**  
+Analista de Dados | Business Intelligence
+
+[GitHub](https://github.com/rrleone) · [Portfólio](https://sites.google.com/view/renatoleone/) · [Repositório do projeto](https://github.com/rrleone/Olist_Ecommerce_Analytics)
+
+---
+
+<div align="center">
+
+**OLIST E-COMMERCE ANALYTICS**
+
+*Dados · Qualidade · Análise · Insights · Decisões*
+
+**RENATO LEONE | DATA ANALYTICS & BUSINESS INTELLIGENCE**
+
+</div>
