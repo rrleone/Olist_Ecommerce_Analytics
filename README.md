@@ -1,3 +1,5 @@
+# Olist E-Commerce Analytics
+
 <div align="center">
 
 <h1>Olist E-Commerce Analytics</h1>
@@ -7,7 +9,6 @@
 <p><strong>E-Commerce · Sales Performance · Customer Behavior · Logistics · Business Insights</strong></p>
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
@@ -22,27 +23,23 @@
 
 ---
 
-## 📌 Visão executiva
+## Visão Executiva
 
 O **Olist E-Commerce Analytics** é um projeto de Análise de Dados e Business Intelligence desenvolvido a partir do Brazilian E-Commerce Public Dataset by Olist.
 
 O projeto integra diferentes entidades do ecossistema de e-commerce para construir uma visão analítica de vendas, clientes, produtos, pagamentos, vendedores, logística e avaliações.
 
-A iniciativa percorre um fluxo de trabalho de ponta a ponta — desde a exploração e preparação dos dados até a construção de estruturas analíticas em PostgreSQL, modelagem no Power BI e desenvolvimento de indicadores para apoiar decisões de negócio.
+A iniciativa percorre um fluxo de trabalho de ponta a ponta, desde a exploração e preparação dos dados até a construção de estruturas analíticas em PostgreSQL, modelagem no Power BI e desenvolvimento de indicadores para apoiar decisões de negócio.
 
-Mais do que apresentar gráficos, o projeto busca demonstrar como dados estruturados, regras de negócio e análise crítica podem transformar informações operacionais em conhecimento relevante para a gestão.
-
-<div align="center">
+Mais do que apresentar gráficos, o projeto demonstra como dados estruturados, regras de negócio e análise crítica podem transformar informações operacionais em conhecimento relevante para a gestão.
 
 **DATA ENGINEERING · DATA ANALYTICS · BUSINESS INTELLIGENCE**
 
 Dados → Qualidade → SQL → Modelagem → Indicadores → Insights
 
-</div>
-
 ---
 
-## 🎯 Problema de negócio
+## Problema de Negócio
 
 Um e-commerce opera com informações distribuídas entre pedidos, clientes, produtos, pagamentos, vendedores, entregas e avaliações.
 
@@ -52,154 +49,146 @@ O projeto busca responder questões como:
 
 - Como evoluem o faturamento e o volume de pedidos?
 - Quais produtos e categorias apresentam maior participação comercial?
-- Como se comportam as vendas ao longo do tempo?
-- Como os pedidos e pagamentos se distribuem?
-- Quais aspectos da operação logística merecem atenção?
-- Como os prazos de entrega se relacionam com a experiência do cliente?
-- Quais informações podem apoiar decisões comerciais e operacionais?
+- Como o faturamento se distribui ao longo do tempo?
+- Qual é o comportamento dos pagamentos?
+- Como se comportam os prazos de entrega?
+- Existem diferenças no desempenho logístico entre regiões?
+- Como as avaliações dos clientes se relacionam com a experiência de compra?
+- Quais indicadores podem apoiar decisões comerciais e operacionais?
 
-O objetivo é organizar essas informações em uma estrutura analítica consistente e transformar os dados em indicadores, análises e insights.
+O objetivo é integrar essas informações e construir uma visão analítica consistente da operação.
 
 ---
 
-## 🗂️ Sobre os dados
+## Sobre os Dados
 
-- **Fonte:** [Brazilian E-Commerce Public Dataset by Olist — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+- **Fonte:** Brazilian E-Commerce Public Dataset by Olist — Kaggle
 - **Segmento:** E-commerce
-- **Tipo de projeto:** Data Analytics & Business Intelligence
-- **Origem:** Dados públicos
+- **Tipo de análise:** Data Analytics e Business Intelligence
+- **Unidade de análise:** pedidos, itens de pedido e entidades relacionadas
 - **Armazenamento analítico:** PostgreSQL
-- **Análise e visualização:** Power BI
+- **Visualização:** Microsoft Power BI
+- **Formato de origem:** CSV
 
-### Entidades do dataset
+### Entidades analisadas
 
-| Entidade | Conteúdo |
-|---|---|
-| Orders | Pedidos e status |
-| Order Items | Itens, preços e fretes |
-| Customers | Clientes e localização |
-| Products | Produtos e categorias |
-| Sellers | Vendedores |
-| Payments | Pagamentos e formas de pagamento |
-| Reviews | Avaliações dos clientes |
-| Geolocation | Informações geográficas |
+- Clientes
+- Localização geográfica
+- Vendedores
+- Produtos
+- Categorias de produtos
+- Pedidos
+- Itens de pedido
+- Pagamentos
+- Avaliações
 
----
+### Dimensões de análise
 
-## 🏗️ Arquitetura analítica
-
-O projeto organiza o processamento e a análise em etapas integradas.
-
-<div align="center">
-
-**Dataset Olist**
-
-↓  
-
-**Preparação e Data Quality**
-
-↓
-
-**PostgreSQL — Tabelas e SQL**
-
-↓
-
-**Views Analíticas**
-
-↓
-
-**Power BI — Modelagem e DAX**
-
-↓
-
-**Dashboard Executivo e Analítico**
-
-↓
-
-**Insights para decisões de negócio**
-
-</div>
-
-A arquitetura separa a preparação dos dados, a camada de consultas e estruturas analíticas e a camada de visualização, facilitando a organização, validação e manutenção do projeto.
+- Desempenho comercial
+- Faturamento e pedidos
+- Produtos e categorias
+- Clientes e localização
+- Vendedores
+- Formas de pagamento
+- Evolução temporal
+- Frete e logística
+- Prazos de entrega
+- Avaliações dos clientes
 
 ---
 
-## 🛠️ Tecnologias e ferramentas
+## Tecnologias e Ferramentas
 
 | Tecnologia | Aplicação no projeto |
 |---|---|
-| **Python** | Preparação e análise de dados |
-| **PostgreSQL** | Banco de dados analítico |
+| **PostgreSQL** | Armazenamento, organização e consulta dos dados |
 | **SQL** | Criação de tabelas, exploração, validação e análise |
-| **SQL Views** | Organização de estruturas analíticas reutilizáveis |
-| **Power BI** | Modelagem, visualização e análise de indicadores |
-| **DAX** | Medidas, KPIs e cálculos analíticos |
+| **Views analíticas** | Organização dos dados para consumo analítico |
+| **Power BI** | Construção do relatório interativo |
+| **DAX** | Desenvolvimento de medidas e indicadores |
+| **CSV** | Formato dos dados de origem |
+| **Git / GitHub** | Versionamento e publicação do projeto |
+
+A Inteligência Artificial foi utilizada como apoio ao desenvolvimento e à documentação, com validação humana das soluções e dos resultados.
 
 ---
 
-## 🔄 Metodologia de desenvolvimento
+## Metodologia
 
-### 01 — Data Profiling
+O projeto foi desenvolvido seguindo um fluxo de trabalho analítico estruturado.
 
-- Compreensão da estrutura dos arquivos.
-- Identificação das entidades.
-- Análise da granularidade.
-- Exploração inicial dos dados.
+### 1. Data Profiling
 
-### 02 — Data Quality
+Inspeção inicial dos arquivos e tabelas para compreender:
 
-- Verificação da consistência dos dados.
-- Análise de valores ausentes e duplicidades.
-- Validação de relacionamentos.
-- Conferência da integridade das informações.
+- Estrutura e dimensões;
+- Tipos de dados;
+- Características das entidades;
+- Relacionamentos;
+- Distribuição dos dados.
 
-### 03 — Data Loading
+### 2. Data Quality
 
-- Organização dos arquivos de entrada.
-- Criação das tabelas no PostgreSQL.
-- Importação dos dados.
-- Validação da carga.
+Verificações relacionadas a:
 
-### 04 — SQL Exploration
+- Valores ausentes;
+- Duplicidades;
+- Consistência dos registros;
+- Integridade referencial;
+- Qualidade das chaves;
+- Validação dos dados utilizados nas análises.
 
-- Consultas exploratórias.
-- Análise de pedidos e itens.
-- Investigação de pagamentos.
-- Exploração de clientes, produtos e vendedores.
+### 3. Data Loading
 
-### 05 — Business Analysis
+Organização dos arquivos CSV e carregamento das informações no PostgreSQL.
 
-- Análise de faturamento e pedidos.
-- Comportamento temporal das vendas.
-- Análise de produtos e categorias.
-- Exploração de logística e entregas.
-- Avaliações e experiência do cliente.
+### 4. SQL Exploration
 
-### 06 — Analytical Views
+Exploração das entidades e relacionamentos utilizando consultas SQL.
 
-Desenvolvimento de views SQL para organizar os dados e disponibilizar estruturas analíticas para o Power BI.
+### 5. Business Analysis
 
-### 07 — Power BI Modeling
+Desenvolvimento de análises envolvendo:
 
-- Organização do modelo de dados.
-- Relacionamentos.
-- Dimensão calendário.
-- Medidas DAX.
-- Indicadores de negócio.
+- Vendas;
+- Pedidos;
+- Pagamentos;
+- Produtos;
+- Clientes;
+- Logística;
+- Avaliações.
 
-### 08 — Dashboard Development
+### 6. Analytical Views
 
-Construção de páginas executivas e analíticas para facilitar a interpretação dos resultados.
+Criação de views analíticas para organizar os dados e facilitar sua utilização no Power BI.
 
-### 09 — Validation & Insights
+### 7. Data Modeling
 
-Validação dos indicadores, interpretação dos resultados e identificação de oportunidades comerciais e operacionais.
+Construção do modelo analítico no Power BI, incluindo:
+
+- Relacionamentos;
+- Dimensão calendário;
+- Organização das tabelas;
+- Medidas DAX;
+- Contexto de filtros.
+
+### 8. Dashboard Development
+
+Construção de páginas analíticas para acompanhamento dos indicadores e exploração dos resultados.
+
+### 9. Validation
+
+Validação dos dados, consultas SQL, views e indicadores do relatório.
+
+### 10. Business Insights
+
+Interpretação dos resultados para identificar oportunidades, pontos de atenção e possíveis ações de negócio.
 
 ---
 
-## 📊 Validação analítica
+## Indicadores e Validações
 
-Durante a validação da view `vw_fact_order_items`, foram registrados:
+Durante a validação da view `vw_fact_order_items`, foram registrados os seguintes resultados:
 
 | Indicador | Resultado |
 |---|---:|
@@ -208,70 +197,92 @@ Durante a validação da view `vw_fact_order_items`, foram registrados:
 | Soma da coluna `price` | R$ 13.591.643,70 |
 | Data máxima de compra | 03/09/2018 |
 
-Os resultados correspondem à versão analisada durante o desenvolvimento e devem ser interpretados considerando a granularidade da view e os filtros aplicados.
+Esses valores correspondem à versão analisada durante o desenvolvimento.
+
+Os indicadores devem ser interpretados considerando a view utilizada, as regras de transformação, os filtros e a definição de cada métrica.
+
+A soma de `price` representa o valor da coluna analisada e não deve ser automaticamente interpretada como faturamento líquido ou receita contábil.
 
 ---
 
-## 📈 Dashboard Power BI
+## Dashboard Power BI
 
-O dashboard apresenta quatro páginas que conectam a visão executiva à análise comercial, operacional e estratégica.
+O relatório Power BI está organizado em quatro páginas complementares.
 
 ### 01 — Visão Geral
 
-Visão consolidada dos indicadores e do desempenho do e-commerce.
+Resumo executivo dos principais indicadores:
+
+- Faturamento;
+- Pedidos;
+- Itens;
+- Ticket médio;
+- Status dos pedidos.
 
 ![Olist — Visão Geral](images/01%20-%20Vis%C3%A3o%20Geral.png)
 
 ### 02 — Vendas
 
-Análise do desempenho comercial e da evolução das vendas.
+Análise do desempenho comercial, evolução do faturamento, volume de pedidos e comparação temporal.
 
 ![Olist — Vendas](images/02%20-%20Vendas.png)
 
 ### 03 — Análises
 
-Exploração de informações comerciais, logísticas e operacionais.
+Exploração de diferentes aspectos da operação:
+
+- Evolução das vendas;
+- Prazos de entrega;
+- Desempenho logístico regional;
+- Avaliações dos clientes;
+- Relação entre frete e valor da compra.
 
 ![Olist — Análises](images/03%20-%20An%C3%A1lises.png)
 
 ### 04 — Insights
 
-Apresentação dos principais aprendizados e oportunidades identificadas.
+Síntese dos aprendizados, pontos de atenção, oportunidades e recomendações para apoiar decisões de negócio.
 
 ![Olist — Insights](images/04%20-%20Insights.png)
 
 ---
 
-## 💡 Análise e geração de insights
+## Insights e Aplicações de Negócio
 
-A integração das diferentes entidades permite explorar o negócio sob múltiplas perspectivas.
+A integração dos dados permite explorar diferentes perspectivas da operação.
 
-### Comercial
-- Evolução do faturamento.
-- Volume e comportamento dos pedidos.
-- Desempenho de produtos e categorias.
-- Distribuição geográfica das vendas.
+### Desempenho Comercial
 
-### Operacional
-- Comportamento dos pedidos.
-- Prazos e desempenho das entregas.
-- Distribuição dos pagamentos.
-- Aspectos relacionados à operação logística.
+Acompanhamento do faturamento, volume de pedidos e evolução temporal para compreender o comportamento das vendas.
 
-### Experiência do cliente
-- Avaliações dos pedidos.
-- Comportamento regional.
-- Relações entre entrega e avaliação.
-- Identificação de possíveis pontos de atenção.
+### Produtos e Categorias
 
-As análises são descritivas e exploratórias. Associações identificadas não devem ser interpretadas automaticamente como relações de causalidade.
+Identificação de produtos e categorias relevantes para a composição dos resultados comerciais.
+
+### Pagamentos
+
+Análise das formas de pagamento e características das transações.
+
+### Logística
+
+Investigação de prazos de entrega, diferenças regionais e possíveis pontos de atenção operacionais.
+
+### Experiência do Cliente
+
+Exploração das avaliações para compreender aspectos relacionados à experiência de compra.
+
+### Apoio à Gestão
+
+Utilização dos indicadores para facilitar o acompanhamento de desempenho e direcionar investigações adicionais.
+
+As análises representam associações e padrões observados nos dados. Não devem ser interpretadas como evidência de causalidade sem investigações complementares.
 
 ---
 
-## 📁 Estrutura do repositório
+## Estrutura do Repositório
 
 ```text
-olist-ecommerce-analytics/
+Olist_Ecommerce_Analytics/
 │
 ├── data/
 │   ├── raw/
@@ -285,7 +296,8 @@ olist-ecommerce-analytics/
 │   ├── 01 - Visão Geral.png
 │   ├── 02 - Vendas.png
 │   ├── 03 - Análises.png
-│   └── 04 - Insights.png
+│   ├── 04 - Insights.png
+│   └── 05 - Capa.png
 │
 ├── powerbi/
 │   ├── Projeto_Olist.pbix
@@ -300,24 +312,8 @@ olist-ecommerce-analytics/
 │   ├── 06_views.sql
 │   ├── 07_validation.sql
 │   ├── 08_dim_calendar.sql
-│   │
 │   ├── exports/
-│   │   └── olist_views_export.csv
-│   │
-│   ├── views/
-│   │   ├── README.md
-│   │   ├── vw_dim_calendar.sql
-│   │   ├── vw_dim_category.sql
-│   │   ├── vw_dim_customer.sql
-│   │   ├── vw_dim_order_powerbi.sql
-│   │   ├── vw_dim_order.sql
-│   │   ├── vw_dim_product.sql
-│   │   ├── vw_dim_seller.sql
-│   │   ├── vw_fact_order_items.sql
-│   │   ├── vw_fact_payments.sql
-│   │   └── vw_fact_reviews.sql
-│   │
-│   └── README.md
+│   └── views/
 │
 ├── .gitignore
 └── README.md
@@ -325,54 +321,77 @@ olist-ecommerce-analytics/
 
 ---
 
-## 🚀 Como reproduzir o projeto
+## Como Executar
 
-1. Obtenha os dados no [Kaggle — Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
-2. Configure o PostgreSQL.
-3. Organize os arquivos nas pastas `data/raw/` e `data/processed/`.
-4. Revise os caminhos de importação nos scripts SQL.
-5. Execute os scripts numerados na ordem apropriada.
-6. Consulte a documentação e as views da pasta `sql/views/`.
+### Pré-requisitos
+
+- PostgreSQL;
+- Microsoft Power BI Desktop;
+- Dataset original da Olist;
+- Arquivos e scripts disponíveis no repositório.
+
+### Etapas de reprodução
+
+1. Obtenha o Brazilian E-Commerce Public Dataset by Olist na fonte original.
+2. Organize os arquivos CSV na estrutura de dados do projeto.
+3. Configure o PostgreSQL e o banco de dados.
+4. Ajuste os caminhos dos arquivos e as configurações de conexão para o ambiente local.
+5. Execute os scripts SQL na ordem numerada, respeitando suas dependências.
+6. Consulte a pasta `sql/views/` para as definições das views analíticas.
 7. Execute as consultas de validação.
 8. Abra `powerbi/Projeto_Olist.pbix`.
-9. Configure a conexão com o banco e atualize o relatório.
+9. Configure a conexão com o PostgreSQL.
+10. Atualize os dados e explore as páginas do relatório.
 
-Os caminhos locais e parâmetros de conexão podem exigir ajustes conforme o ambiente utilizado.
-
----
-
-## 🤖 Inteligência Artificial aplicada à análise
-
-A Inteligência Artificial foi utilizada como recurso de apoio ao desenvolvimento, contribuindo para acelerar tarefas de análise, revisão, depuração e documentação.
-
-O uso responsável da IA exige:
-
-- Compreensão das soluções utilizadas.
-- Validação independente das consultas.
-- Conferência das regras de negócio.
-- Verificação dos resultados e indicadores.
-- Documentação das decisões.
-- Responsabilidade do analista pela interpretação final.
-
-**A IA acelera o trabalho analítico; o julgamento crítico e a validação continuam sendo responsabilidades do analista.**
+Não publique credenciais, senhas ou arquivos de configuração com informações sensíveis.
 
 ---
 
-## 👤 Autor
+## Utilização de Inteligência Artificial
+
+A Inteligência Artificial foi utilizada como recurso de apoio ao desenvolvimento, incluindo tarefas de SQL, revisão, depuração e documentação.
+
+A aplicação profissional de IA exige validação pelo analista.
+
+Durante o desenvolvimento, a responsabilidade analítica envolve:
+
+- Compreender o código utilizado;
+- Validar consultas e fórmulas;
+- Conferir resultados;
+- Verificar relacionamentos e contexto de filtros;
+- Documentar decisões;
+- Avaliar limitações;
+- Interpretar os resultados sob a perspectiva de negócio.
+
+A IA atua como ferramenta de apoio, não como substituta do julgamento analítico.
+
+---
+
+## Conclusão
+
+O Olist E-Commerce Analytics demonstra a aplicação de um fluxo de trabalho de ponta a ponta em Análise de Dados e Business Intelligence.
+
+O projeto integra dados transacionais, SQL, PostgreSQL, views analíticas, modelagem de dados, DAX e Power BI para construir uma visão comercial e operacional do e-commerce.
+
+A iniciativa evidencia a importância da qualidade dos dados, da organização analítica, da validação dos indicadores e da interpretação dos resultados para transformar dados em informações relevantes para a gestão.
+
+---
+
+## Autor
 
 **Renato Leone**  
 Analista de Dados | Business Intelligence
 
-[GitHub](https://github.com/rrleone) · [Portfólio](https://sites.google.com/view/renatoleone/) · [Repositório do projeto](https://github.com/rrleone/Olist_Ecommerce_Analytics)
+Projeto desenvolvido para demonstrar competências em análise de dados, SQL, PostgreSQL, modelagem analítica, Power BI, DAX e interpretação de indicadores de negócio.
 
 ---
 
 <div align="center">
 
-**OLIST E-COMMERCE ANALYTICS**
+**RENATO LEONE**
 
-*Dados · Qualidade · Análise · Insights · Decisões*
+ANALISTA DE DADOS | BI
 
-**RENATO LEONE | DATA ANALYTICS & BUSINESS INTELLIGENCE**
+Dados · Análise · Insights · Decisões
 
 </div>
