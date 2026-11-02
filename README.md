@@ -4,7 +4,7 @@
 
 <h3>End-to-End Data Analytics & Business Intelligence</h3>
 
-**E-Commerce · Sales Performance · Customer Behavior · Logistics · Business Insights**
+<p><strong>E-Commerce · Sales Performance · Customer Behavior · Logistics · Business Insights</strong></p>
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
@@ -14,7 +14,11 @@
   <img src="https://img.shields.io/badge/DAX-2C3E50?style=for-the-badge&logoColor=white"/>
 </p>
 
-**Transformando dados transacionais em inteligência comercial, operacional e estratégica.**
+<p>
+  <strong>Transformando dados transacionais em inteligência comercial, operacional e estratégica.</strong>
+</p>
+
+<img src="images/05%20-%20Capa.png" width="100%" alt="Capa do projeto Olist E-Commerce Analytics">
 
 </div>
 
