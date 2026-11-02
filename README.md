@@ -1,23 +1,25 @@
-# Olist E-Commerce Analytics
-
 <div align="center">
 
 <h1>Olist E-Commerce Analytics</h1>
 
 <h3>End-to-End Data Analytics & Business Intelligence</h3>
 
-<p><strong>E-Commerce · Sales Performance · Customer Behavior · Logistics · Business Insights</strong></p>
+<p>
+E-Commerce · Sales Performance · Customer Behavior · Logistics · Business Insights
+</p>
 
 <p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
-  <img src="https://img.shields.io/badge/DAX-2C3E50?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/DAX-2C3E50?style=for-the-badge"/>
 </p>
 
-<p><strong>Transformando dados transacionais em inteligência comercial, operacional e estratégica.</strong></p>
-
-<img src="images/05%20-%20Capa.png" width="100%" alt="Capa do projeto Olist E-Commerce Analytics">
+<p>
+<strong>Transformando dados transacionais em inteligência comercial, operacional e estratégica.</strong>
+</p>
 
 </div>
 
@@ -382,16 +384,18 @@ A iniciativa evidencia a importância da qualidade dos dados, da organização a
 **Renato Leone**  
 Analista de Dados | Business Intelligence
 
-Projeto desenvolvido para demonstrar competências em análise de dados, SQL, PostgreSQL, modelagem analítica, Power BI, DAX e interpretação de indicadores de negócio.
+- **GitHub:** [github.com/rrleone](https://github.com/rrleone)
+- **Portfólio:** [Renato Leone — Data Analytics & BI](https://sites.google.com/view/renatoleone/)
+- **Repositório:** [Olist_Ecommerce_Analytics](https://github.com/rrleone/Olist_Ecommerce_Analytics)
 
 ---
 
 <div align="center">
 
-**RENATO LEONE**
+**OLIST E-COMMERCE ANALYTICS**
 
-ANALISTA DE DADOS | BI
+Dados · Qualidade · Análise · Insights · Decisões
 
-Dados · Análise · Insights · Decisões
+**RENATO LEONE | DATA ANALYTICS & BUSINESS INTELLIGENCE**
 
 </div>
