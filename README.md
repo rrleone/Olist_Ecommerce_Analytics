@@ -1,10 +1,8 @@
 <div align="center">
-  
-# Olist E-Commerce Analytics
 
-<div align="center">
+<h1>Olist E-Commerce Analytics</h1>
 
-### End-to-End Data Analytics & Business Intelligence
+<h3>End-to-End Data Analytics & Business Intelligence</h3>
 
 **E-Commerce · Sales Performance · Customer Behavior · Logistics · Business Insights**
 
