@@ -1,10 +1,28 @@
 # 🛒 Olist E-Commerce Analytics
 
+<div align="center">
+
+### E-Commerce · Sales · Customer Behavior · Logistics
+
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+  <img src="https://img.shields.io/badge/DAX-2C3E50?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git%20%26%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
+
+**Transformando dados do e-commerce brasileiro em insights comerciais e operacionais.**
+
+</div>
+
+---
+
 ## 🎯 Problema de negócio
 
 A análise busca compreender o desempenho do e-commerce da Olist, conectando vendas, pedidos, pagamentos, produtos, clientes, vendedores, logística e avaliações.
 
-O objetivo é transformar os dados transacionais em informações que apoiem decisões comerciais e operacionais, permitindo acompanhar indicadores de faturamento, volume de pedidos, ticket médio, comportamento temporal das vendas, desempenho logístico e experiência do cliente.
+O objetivo é transformar dados transacionais em informações que apoiem decisões comerciais e operacionais, permitindo acompanhar indicadores de faturamento, volume de pedidos, ticket médio, comportamento temporal das vendas, desempenho logístico e experiência do cliente.
 
 ---
 
@@ -14,7 +32,7 @@ O objetivo é transformar os dados transacionais em informações que apoiem dec
 - **Tipo de análise:** E-Commerce Analytics / Business Intelligence
 - **Unidade de análise:** pedidos, itens de pedido e entidades relacionadas
 - **Armazenamento analítico:** PostgreSQL
-- **Camada de visualização:** Power BI
+- **Visualização:** Power BI
 
 ### Principais informações analisadas
 
@@ -29,93 +47,104 @@ O objetivo é transformar os dados transacionais em informações que apoiem dec
 
 ---
 
-## 🛠️ Ferramentas utilizadas
+## 🛠️ Tecnologias e ferramentas
 
-- **PostgreSQL**
-- **SQL**
-- **Views analíticas**
-- **Power BI**
-- **DAX**
-- **CSV**
-- **Git / GitHub**
-- **Inteligência Artificial** como apoio ao desenvolvimento, com validação humana
+| Tecnologia | Aplicação no projeto |
+|---|---|
+| PostgreSQL | Armazenamento e consulta dos dados |
+| SQL | Exploração, validação e análise |
+| Views analíticas | Organização dos dados para análise |
+| Power BI | Modelagem e visualização dos indicadores |
+| DAX | Criação de medidas e indicadores |
+| CSV | Formato dos dados de entrada |
+| Git / GitHub | Versionamento e documentação |
+| Inteligência Artificial | Apoio ao desenvolvimento, com validação humana |
 
 ---
 
 ## 🔍 Etapas do projeto
+
+**Fluxo:** Dados → Qualidade → SQL → Análise de Negócio → Modelagem → Dashboard → Insights
 
 1. **Data Profiling** — entendimento da estrutura, dimensões, tipos e características dos dados.
 2. **Data Quality** — verificações de valores ausentes, duplicidades, consistência e integridade.
 3. **Data Loading** — organização dos CSVs e carga dos dados no PostgreSQL.
 4. **SQL Exploration** — consultas exploratórias para compreender entidades e comportamento dos dados.
 5. **Business Analysis** — análises de vendas, pedidos, pagamentos, logística e avaliações.
-6. **Analytical Views** — criação de views para organizar dimensões e fatos consumidos nas análises.
+6. **Analytical Views** — criação de views para organizar dados consumidos nas análises.
 7. **Power BI Data Modeling** — preparação do modelo, calendário, relacionamentos e medidas DAX.
-8. **Dashboard & KPIs** — construção de páginas executivas, comerciais e analíticas.
+8. **Dashboard & KPIs** — construção das páginas executivas e analíticas.
 9. **Business Insights** — síntese de resultados, oportunidades e recomendações.
 10. **AI-Assisted Analysis** — uso de IA para acelerar tarefas, com validação dos resultados pelo analista.
 
 ---
 
-## 📈 Indicadores e validações
+## 📊 Indicadores e validações
 
 Durante a validação da view `vw_fact_order_items`, foram registrados:
 
-- **112.650** linhas de itens;
-- **98.666** pedidos distintos;
-- **R$ 13.591.643,70** na soma da coluna `price`;
-- **03/09/2018** como data máxima de compra registrada na view.
+| Indicador | Resultado |
+|---|---:|
+| Linhas de itens | 112.650 |
+| Pedidos distintos | 98.666 |
+| Soma da coluna `price` | R$ 13.591.643,70 |
+| Data máxima de compra | 03/09/2018 |
 
-Esses números descrevem a versão analisada durante o desenvolvimento. Devem ser recalculados se os dados, as views, os filtros ou as regras de transformação forem alterados.
+> Os valores representam a versão analisada durante o desenvolvimento. Podem variar caso os dados, views, filtros ou regras de transformação sejam modificados.
 
 ---
 
-## 🖼️ Prévia do dashboard
+## 📈 Dashboard Power BI
 
-O projeto possui quatro páginas no Power BI:
+O relatório está organizado em quatro páginas analíticas.
 
 ### 01 — Visão Geral
 
 Resumo executivo dos principais indicadores de faturamento, pedidos, itens, ticket médio e status dos pedidos.
 
+![Olist — Visão Geral](https://raw.githubusercontent.com/rrleone/Olist_Ecommerce_Analytics/main/images/Olist%20-%20Vis%C3%A3o%20Geral.png)
+
 ### 02 — Vendas
 
-Análise do desempenho comercial, evolução do faturamento, volume de pedidos e comparação com o período anterior.
+Análise do desempenho comercial, evolução do faturamento, volume de pedidos e comparação com períodos anteriores.
+
+![Olist — Vendas](https://raw.githubusercontent.com/rrleone/Olist_Ecommerce_Analytics/main/images/Olist%20-%20Vendas.png)
 
 ### 03 — Análises
 
 Exploração da evolução das vendas, prazos de entrega, desempenho logístico regional, avaliações e relação entre frete e valor da compra.
 
+![Olist — Análises](https://raw.githubusercontent.com/rrleone/Olist_Ecommerce_Analytics/main/images/Olist%20-%20An%C3%A1lises.png)
+
 ### 04 — Insights
 
 Síntese dos aprendizados, pontos de atenção, oportunidades e recomendações para apoiar decisões de negócio.
 
-As capturas das páginas estão disponíveis na pasta `imagens/`.
+![Olist — Insights](https://raw.githubusercontent.com/rrleone/Olist_Ecommerce_Analytics/main/images/Olist%20-%20Insights.png)
 
 ---
 
-## ✅ Conclusão e oportunidades
+## 💡 Conclusão e oportunidades
 
-O projeto demonstra um fluxo de trabalho de Análise de Dados e Business Intelligence que integra preparação de dados, SQL, modelagem analítica, medidas DAX e comunicação executiva.
+O projeto demonstra a aplicação de um fluxo de trabalho de Análise de Dados e Business Intelligence, integrando preparação e validação de dados, SQL, modelagem analítica, medidas DAX e comunicação executiva.
 
-As análises permitem acompanhar o desempenho comercial e explorar aspectos da operação logística e da experiência do cliente. As associações observadas devem ser interpretadas considerando a cobertura dos dados, as definições das métricas e os filtros aplicados; não representam, por si só, relações de causalidade.
+As análises permitem acompanhar o desempenho comercial e explorar aspectos da operação logística e da experiência do cliente.
+
+As relações observadas são associações descritivas e não demonstram, por si só, causalidade.
 
 ---
 
 ## 📁 Estrutura do repositório
 
 ```text
-olist-ecommerce-analytics/
+Olist_Ecommerce_Analytics/
 │
 ├── data/
-│   ├── raw/                  # Arquivos CSV de origem
-│   └── processed/            # Dados tratados, quando necessários
 │
 ├── docs/
-│   ├── dicionario_dados.md
-│   └── metodologia.md
+│   └── dicionario_dados
 │
-├── imagens/
+├── images/
 │   ├── Olist - Visão Geral.png
 │   ├── Olist - Vendas.png
 │   ├── Olist - Análises.png
@@ -138,33 +167,33 @@ olist-ecommerce-analytics/
 └── README.md
 ```
 
-> A estrutura representa a organização prevista para a entrega. Confira os nomes reais dos arquivos antes de publicar e ajuste a árvore se necessário.
-
 ---
 
-## 🚀 Como reproduzir
+## 🚀 Como reproduzir o projeto
 
-1. Obtenha o conjunto de dados a partir da fonte autorizada e verifique os termos de uso.
-2. Configure o PostgreSQL e ajuste os caminhos dos arquivos CSV e as configurações de conexão para seu ambiente.
-3. Execute os scripts SQL na ordem numerada, verificando dependências e resultados de cada etapa.
-4. Consulte `sql/views/` para as definições individuais das views.
-5. Execute as consultas de validação e compare os resultados com os indicadores do relatório.
-6. Abra `powerbi/Projeto_Olist.pbix`, configure a conexão ao banco e atualize os dados.
+1. Obtenha o dataset original na fonte: [Brazilian E-Commerce Public Dataset by Olist — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+2. Configure o PostgreSQL em seu ambiente.
+3. Ajuste os caminhos dos arquivos CSV e as configurações de conexão.
+4. Execute os scripts SQL na ordem numerada, respeitando suas dependências.
+5. Consulte a pasta `sql/views/` para as definições individuais das views.
+6. Execute as consultas de validação e compare os resultados com os indicadores documentados.
+7. Abra `powerbi/Projeto_Olist.pbix`, configure a conexão ao banco e atualize os dados.
 
-Não publique credenciais, senhas ou arquivos de configuração com informações sensíveis.
+**Segurança:** não publique credenciais, senhas ou arquivos de configuração com informações sensíveis.
 
 ---
 
 ## 🤖 Uso de Inteligência Artificial
 
-A IA foi utilizada como apoio para acelerar tarefas de SQL, revisão de medidas, depuração e documentação.
+A Inteligência Artificial foi utilizada como apoio ao desenvolvimento, contribuindo para acelerar tarefas de SQL, revisão de medidas, depuração e documentação.
 
 O uso profissional exige que o analista:
+
 - compreenda o código utilizado;
-- valide fórmulas e resultados com consultas independentes;
+- valide fórmulas e resultados por meio de consultas independentes;
 - confira relacionamentos e contexto de filtros;
 - documente decisões e limitações;
-- mantenha a responsabilidade pela interpretação de negócio.
+- mantenha a responsabilidade pela interpretação dos resultados.
 
 A IA apoia o trabalho analítico, mas não substitui a validação humana.
 
@@ -172,16 +201,32 @@ A IA apoia o trabalho analítico, mas não substitui a validação humana.
 
 ## 👤 Autor
 
-**Renato Leone**
-
+**Renato Leone**  
 Analista de Dados | Business Intelligence
 
-GitHub: https://github.com/rrleone
+- **GitHub:** [github.com/rrleone](https://github.com/rrleone)
+- **Portfólio:** [Renato Leone — Data Analytics & BI](https://sites.google.com/view/renatoleone/)
+- **Repositório:** [Olist_Ecommerce_Analytics](https://github.com/rrleone/Olist_Ecommerce_Analytics)
 
-## 📊 Relatório Power BI
+## Referências
 
-Acesse o relatório interativo do projeto Olist:
+**Dados**
 
-[**Visualizar relatório no Power BI Service**](https://app.powerbi.com/groups/me/reports/10365f91-fec0-4c71-8167-ed18bcda7ef6/cea2e666e69c26cf6079?experience=power-bi)
+- Kaggle — [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-> O acesso ao relatório depende das permissões e da autenticação da conta Power BI.
+**Documentação**
+
+- [PostgreSQL](https://www.postgresql.org/docs/)
+- [Microsoft Power BI](https://learn.microsoft.com/power-bi/)
+- [DAX — Microsoft Learn](https://learn.microsoft.com/dax/)
+
+---
+
+<div align="center">
+
+**OLIST E-COMMERCE ANALYTICS**  
+*Dados · Qualidade · Análise · Insights · Decisões*
+
+**RENATO LEONE | DATA ANALYTICS & BUSINESS INTELLIGENCE**
+
+</div>
