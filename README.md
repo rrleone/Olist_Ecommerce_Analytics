@@ -14,9 +14,7 @@
   <img src="https://img.shields.io/badge/DAX-2C3E50?style=for-the-badge&logoColor=white"/>
 </p>
 
-<p>
-  <strong>Transformando dados transacionais em inteligência comercial, operacional e estratégica.</strong>
-</p>
+<p><strong>Transformando dados transacionais em inteligência comercial, operacional e estratégica.</strong></p>
 
 <img src="images/05%20-%20Capa.png" width="100%" alt="Capa do projeto Olist E-Commerce Analytics">
 
